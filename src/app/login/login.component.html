@@ -1,0 +1,29 @@
+<div class="login-container">
+    <img  class="films" src="./gr-stocks-q8P8YoR6erg-unsplash.jpg" alt="films">
+    <div class="logo">
+        Serenity Streams
+    </div>
+    <div class="desc">
+        "Serenity Streams" invites you to experience a captivating array of movies that transport you to magical realms and stir
+        your emotions.
+        
+        Discover a curated selection of thought-provoking films that will take you on an unforgettable journey through
+        captivating narratives and stunning visuals.
+        
+        
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="upassword" [(ngModel)]="password">
+        </div>
+        <div class="btn-container">
+            <div class="error">{{errMsg}}</div>
+            <div class="btn btn-dark mt-3 " (click)="login()">Login</div>
+        </div>
+    </div>
+</div>
